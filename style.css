@@ -45,3 +45,32 @@ footer div {
     display: flex;
     align-items: center;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    main {
+        height: 100%;
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    section:nth-child(3) {
+        grid-row: span 2;
+        grid-column: auto;
+    }
+
+    footer{
+        margin: 0px 12px;
+        margin-top: 12px;
+        margin-bottom: 25px;
+    }
+
+    body {
+        display: block;
+    }
+
+    .header{
+        height: 30vh;
+    }
+}
