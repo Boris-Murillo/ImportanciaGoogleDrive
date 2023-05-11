@@ -1,0 +1,47 @@
+header {
+    background-image: url('./assets/fondo.jpg');
+    background-size: cover; /* ajusta el tamaño de la imagen para que cubra todo el header */
+    background-position: center; /* centra la imagen en el header */
+}
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: 30% 60% 10%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    margin-left: 5%;
+}
+
+main {
+    display: grid;
+    height: 40vh;
+    grid-template-columns: 46% 46%;
+    gap: 8%;
+    align-items: center;
+    margin: 0px 12px;
+}
+
+section:nth-child(3) {
+    grid-column: span 2;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
